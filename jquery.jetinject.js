@@ -21,7 +21,7 @@
  */
 
 /**
- * JetInjected is a very simple, small and able dependency injection-, 
+ * Jetinject is a very simple, small and able dependency injection-, 
  * application context- or bean factory-plugin for jQuery.
  * 
  * Wire an application context like this:
@@ -77,7 +77,7 @@
 	ApplicationContext = function(config) {
 		var _beans = this.beans = {};
 		var _instances = this.instances = {};	
-		$.each(config || {}, function(id, definition) {
+		$.each(config || {}, function(id, definition) {
 			var bean = new Bean(definition);
 			_beans[id] = bean;
 			if (bean.scope === 'singleton')
